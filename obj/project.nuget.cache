@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "0kAJS/xXV5ySxtMPVU3mNwZphZfHfbRyvn0pjIiu7UeqMjihQbTLs+QEEvvyzMJMY5ccJtHH7AS6ZnP9NSVasg==",
+  "dgSpecHash": "M+5R/OkU8YYhtKIfaWZ9wWToI9dFd5q48VL8LeXQ6kikhvbc7Jdxw4TsiRiHhNuTf1hTv7149wc6s4lY4maKAg==",
   "success": true,
   "projectFilePath": "C:\\Users\\AdedamolaAjayi\\source\\repos\\EasyCaching\\EasyCaching.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,9 @@
     "C:\\Users\\AdedamolaAjayi\\.nuget\\packages\\easycaching.core\\1.9.2\\easycaching.core.1.9.2.nupkg.sha512",
     "C:\\Users\\AdedamolaAjayi\\.nuget\\packages\\easycaching.inmemory\\1.9.2\\easycaching.inmemory.1.9.2.nupkg.sha512",
     "C:\\Users\\AdedamolaAjayi\\.nuget\\packages\\easycaching.sqlite\\1.9.2\\easycaching.sqlite.1.9.2.nupkg.sha512",
+    "C:\\Users\\AdedamolaAjayi\\.nuget\\packages\\fluentvalidation\\11.9.1\\fluentvalidation.11.9.1.nupkg.sha512",
+    "C:\\Users\\AdedamolaAjayi\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\AdedamolaAjayi\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "C:\\Users\\AdedamolaAjayi\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\AdedamolaAjayi\\.nuget\\packages\\microsoft.data.sqlite\\6.0.0\\microsoft.data.sqlite.6.0.0.nupkg.sha512",
     "C:\\Users\\AdedamolaAjayi\\.nuget\\packages\\microsoft.data.sqlite.core\\6.0.0\\microsoft.data.sqlite.core.6.0.0.nupkg.sha512",

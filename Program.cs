@@ -1,3 +1,9 @@
+using EasyCaching.Interfaces;
+using EasyCaching.Models;
+using EasyCaching.Services;
+using EasyCaching.Validators;
+using FluentValidation;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -6,7 +12,22 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
+builder.Services.AddScoped<IValidator<Student>, StudentValidator>();
+builder.Services.AddScoped<IStudentService, StudentService>();
+builder.Services.AddStackExchangeRedisCache(options =>
+{
+    options.Configuration = "Your_Redis_Connection_String";
+    options.InstanceName = "SampleInstance";
+});
+builder.Services.AddMemoryCache();
+builder.Services.AddEasyCaching(options =>
+{
+    options.UseInMemory(builder.Configuration, "InMemoryCache", "EasyCaching:InMemoryCache");
+    options.UseSQLite(config =>
+    {
+        config.DBConfig = new EasyCaching.SQLite.SQLiteDBOptions { FileName = "cache.db" };
+    }, "SQLiteCache");
+});
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
