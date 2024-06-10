@@ -50,6 +50,7 @@ namespace EasyCaching.Services
                 return students;
 
             }
+            return students;
         }
 
         private async Task SetArticles(List<Student> students)
